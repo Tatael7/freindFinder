@@ -4,16 +4,130 @@
         <title>Survey</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css"> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script> -->
     </head>
     <body>
         <div class="container">
             <div class="jumbotron">
-                <h1 class="text-center">this is the thing for the survey</h1>
+                <h1 class="text-center">Hello, welcome to the Survey</h1>
                 <div class="text-center">
                     <a href="/"><button type="button" class="btn btn-lg btn-primary">
                         home
                     </button></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><strong>About You</strong></h3>
+                    <br>
+                    <h4>Name (Required></h4>
+                    <input type="text" id="name" class="form-control" required>
+                    <h4>Link to Picture (Required)</h4>
+                    <input type="text" id="picture" class="form-control" required>
+                    <hr>
+                    <h3><strong>Question 1</strong></h3>
+                    <h4>Burritos are the most convenient of all fast foods.</h4>
+                    <select class="chosen-select" class="answer" id="q1">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 2</strong></h3>
+                    <h4>San Diego has better Mexican food than any other city in the US.</h4>
+                    <select class="chosen-select" class="answer" id="q2">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 3</strong></h3>
+                    <h4>Sushi Burritos are the most "San Diego" food of all time.</h4>
+                    <select class="chosen-select" class="answer" id="q3">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree), this is the wrong answer</option>
+                        <option value="2">2, this is the wrong answer</option>
+                        <option value="3">3, this is the wrong answer</option>
+                        <option value="4">4, this is the wrong answer</option>
+                        <option value="5">5 (Strongly Agree), this the ONLY right answer.</option>
+                    </select>
+                    <h3><strong>Question 4</strong></h3>
+                    <h4>This homework assignment is really hard.</h4>
+                    <select class="chosen-select" class="answer" id="q4">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 5</strong></h3>
+                    <h4>Dark Souls isn't that hard.</h4>
+                    <select class="chosen-select" class="answer" id="q5">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 6</strong></h3>
+                    <h4>Music is one of the most universally unifying arts.</h4>
+                    <select class="chosen-select" class="answer" id="q6">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 7</strong></h3>
+                    <h4>Griffith did nothing wrong.</h4>
+                    <select class="chosen-select" class="answer" id="q7">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 8</strong></h3>
+                    <h4>It should be socially acceptable to wear to every occasion.</h4>
+                    <select class="chosen-select" class="answer" id="q8">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 9</strong></h3>
+                    <h4>The manga is better than the anime.</h4>
+                    <select class="chosen-select" class="answer" id="q9">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <h3><strong>Question 10</strong></h3>
+                    <h4>Tacos taste better on Tuesdays.</h4>
+                    <select class="chosen-select" class="answer" id="q10">
+                        <option value></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                    <hr>
+                    <button class="btn btn-danger" id="submit">Submit</button>
                 </div>
             </div>
         </div>
@@ -28,5 +142,67 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="../app/data/friends.js"></script>
+        <script>
+            $("#submit").on("click", function(event) {
+                event.preventDefault();
+
+                function validation() {
+                    var isValid = true;
+                    $(".form-control").each(function() {
+                        if($(this).val() === "") {
+                            isValid = false;
+                        }
+                    });
+                    $(".answer").each(function() {
+                        if($(this).val() === "") {
+                            isValid = false;
+                        }
+                    });
+                    return isValid;
+                }
+                if(validation()) {
+                    var newFriend = {
+                        name: $("#name").val(),
+                        picture: $("#picture").val(),
+                        answers: [
+                            $("#q1").val(),
+                            $("#q2").val(),
+                            $("#q3").val(),
+                            $("#q4").val(),
+                            $("#q5").val(),
+                            $("#q6").val(),
+                            $("#q7").val(),
+                            $("#q8").val(),
+                            $("#q9").val(),
+                            $("#q10").val()
+                        ]
+                    };
+                    console.log(newFriend);
+
+                    var currentURL = window.location.origin;
+
+                    $.post(currentURL + "/api/friends", newFriend, function(data) {
+                        alert("Thank you for taking the survey");
+                  
+                    })
+                }else{
+                    alert("Please fill out all required forms");
+                };
+
+                runFriendQuery();
+            });
+
+            function runFriendQuery() {
+                var currentURLdos = window.location.origin;
+                $.ajax({url: currentURLdos + "/api/friends", method: "GET"})
+                .done(function(friendsArray) {
+                    console.log(friendsArray);
+                    for(var i = 0; i < friendsArray.length; i++) {
+                        console.log(friendsArray[i]);
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
+
