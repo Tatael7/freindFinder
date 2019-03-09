@@ -1,0 +1,27 @@
+{
+  "name": "freindfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tatael7/freindFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tatael7/freindFinder/issues"
+  },
+  "homepage": "https://github.com/Tatael7/freindFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "inquirer": "^6.2.2",
+    "path": "^0.12.7",
+    "paths": "^0.1.1"
+  }
+}
