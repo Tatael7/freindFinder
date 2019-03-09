@@ -143,6 +143,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="../app/data/friends.js"></script>
         <script>
+            //var friendsArray=require("../app/data/friends.js");
+            var amigo;
             $("#submit").on("click", function(event) {
                 event.preventDefault();
 
@@ -178,18 +180,18 @@
                         ]
                     };
                     console.log(newFriend);
-
+                    amigo = newFriend;
                     var currentURL = window.location.origin;
 
                     $.post(currentURL + "/api/friends", newFriend, function(data) {
-                        alert("Thank you for taking the survey");
-                  
+                        //alert("Thank you for taking the survey");
+                        //runFriendQuery();
                     })
                 }else{
                     alert("Please fill out all required forms");
                 };
 
-                runFriendQuery();
+                 runFriendQuery(newFriend);
             });
 
             function runFriendQuery() {
@@ -198,7 +200,9 @@
                 .done(function(friendsArray) {
                     console.log(friendsArray);
                     for(var i = 0; i < friendsArray.length; i++) {
-                        console.log(friendsArray[i]);
+                        console.log( "Name: " + friendsArray[i].name + "|| Answers: " + friendsArray[i].answers);
+                        console.log(amigo);
+
                     }
                 });
             }
