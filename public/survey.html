@@ -201,9 +201,12 @@
                     console.log(friendsArray);
                     for(var i = 0; i < friendsArray.length; i++) {
                         console.log( "Name: " + friendsArray[i].name + "|| Answers: " + friendsArray[i].answers);
-                        console.log(amigo);
-
-                    }
+                        for(var k = 0; k < amigo.answers.length; k++) {
+                            console.log(amigo.answers[k]);
+                            console.log(friendsArray[i].answers[k]);
+                        }
+                    };
+                  
                 });
             }
         </script>
