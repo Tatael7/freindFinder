@@ -209,7 +209,7 @@
                     alert("Please fill out all required forms");
                 };
 
-                //runFriendQuery(amigo);
+                runFriendQuery(amigo);
             });
 
             function runFriendQuery() {
@@ -230,6 +230,7 @@
                         console.log(diffArry);
                     }
                     var bestMatch = Math.abs(diffArry.indexOf(Math.min(diffArry)));
+                    alert(friendsArray[bestMatch].name);
                     console.log(bestMatch);
                     console.log(friendsArray[bestMatch].name);
                     
